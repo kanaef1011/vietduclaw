@@ -25,10 +25,11 @@
         >
         <label class="burger" for="menu-toggle">☰</label>
         <nav class="links">
-          <a href="#gioi-thieu">Giới thiệu</a>
-          <a href="#linh-vuc">Lĩnh vực</a>
-          <a href="#quy-trinh">Quy trình</a>
-          <a href="#doi-ngu">Đội ngũ</a>
+          <a href="/Gioi Thieu/gioithieu.html">Giới thiệu</a>
+          <a href="/Dich Vu Phap Ly/dichvuphaply.html">Dịch vụ pháp lý</a>
+          <a href="/Du An Noi Bat/duannoibat.html">Dự án nổi bật</a>
+          <a href="/Tin Luat/tinluat.html">Tin luật</a>
+          <a href="">Đội ngũ</a>
           <a href="#lien-he" class="btn-cta">Đặt lịch tư vấn</a>
         </nav>
       </div>
@@ -303,11 +304,16 @@
         </div>
         <div>
           <h3>Đặt lịch tư vấn</h3>
-          <form class="consult">
-            <input type="text" placeholder="Họ và tên" />
-            <input type="text" placeholder="Số điện thoại" />
-            <textarea rows="3" placeholder="Vấn đề cần tư vấn"></textarea>
-            <button type="button">Gửi yêu cầu</button>
+          <form class="consult" id="consult-form">
+            <input type="text" name="hoten" placeholder="Họ và tên" required />
+            <input type="tel" name="sdt" placeholder="Số điện thoại" required />
+            <textarea
+              rows="3"
+              name="vande"
+              placeholder="Vấn đề cần tư vấn"
+            ></textarea>
+            <button type="submit">Gửi yêu cầu</button>
+            <p class="form-status" id="form-status"></p>
           </form>
         </div>
       </div>
@@ -316,5 +322,6 @@
         <span>Điều 1 – Điều 4 · Tài liệu giới thiệu dịch vụ</span>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
