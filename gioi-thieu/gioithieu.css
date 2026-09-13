@@ -225,3 +225,31 @@ nav.links a:hover {
   max-width: 300px;
   height: auto;
 }
+
+@media (max-width: 880px) {
+  nav.links {
+    position: fixed;
+    top: 63px;
+    left: 0;
+    right: 0;
+    background: var(--ink);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 32px;
+    gap: 16px;
+    transform: translateY(-140%);
+    transition: transform 0.25s ease;
+    border-bottom: 3px solid var(--gold);
+  }
+  #menu-toggle:checked ~ .nav nav.links {
+    transform: translateY(0);
+  }
+  .burger {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--paper);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
